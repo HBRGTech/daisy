@@ -1,0 +1,72 @@
+#################
+## Eclipse
+#################
+
+*.pydevproject
+.project
+.metadata
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+#############
+## Windows, mac, auto-generated detritus
+#############
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac crap
+.DS_Store
+
+# Vagrant
+.vagrant/
+
+# Installed Modules
+Gemfile.lock
+node_modules/
+grunt.log
+php.log
+npm-debug.log
+
+# ignore grunt compiled style.css
+www/source/css/style.css
+
+# pattern-lab files ignore public stuff
+www/public/css/*.css
+www/public/patterns/**/*.html
+www/public/patterns/**/*.mustache
+www/public/js/*.js
+www/public/images/*
+www/public/fonts/*
+www/public/index.html
+www/public/styleguide/html/styleguide.html
+www/public/data/annotations.js
+www/public/latest-change.txt
+www/public/css/images/*
+www/source/css/hbr-fonts.css
