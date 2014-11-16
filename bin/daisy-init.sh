@@ -85,7 +85,7 @@ vagrant reload --no-provision || vagrant up --no-provision
 vagrant provision
 echo ""
 [[ -n "$DAISY_DOMAIN" ]] && export FACTER_daisy_domain="$DAISY_DOMAIN"
-puppet apply --modulepath=/srv/puppet/modules --templatedir=/srv/puppet/files /srv/puppet/manifests/init.pp
+puppet apply --modulepath=/vagrant_data/puppet/modules --templatedir=/vagrant_data/puppet/files /vagrant_data/puppet/manifests/site.pp
 echo ""
 
 # =====================================
