@@ -47,7 +47,7 @@ est. 1922        |_|  \_\___| \_/ |_|\___| \_/\_/
 # =====================================
 # Check for prerequisites
 # =====================================
-if [[ `which vagrant` || ! `which VBoxManage` ]]; then
+if [[ ! `which vagrant` || ! `which VBoxManage` ]]; then
     echo "Please install the prerequisites"
     echo "* Vagrant"
     echo "* VirtualBox"
