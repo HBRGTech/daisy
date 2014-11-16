@@ -92,7 +92,7 @@ echo "=================================="
 echo "= Configuring the hosts file"
 echo "=================================="
 # Should match IP configured in Vagrantfile
-cat /etc/hosts | grep DAISY_DOMAIN || sudo printf "\n# Daisy Pattern Lab\n192.168.33.20 ${DAISY_DOMAIN}\n" | sudo tee -a /etc/hosts
+cat /etc/hosts | grep DAISY_DOMAIN || printf "\n# Daisy Pattern Lab\n192.168.33.20 ${DAISY_DOMAIN}\n" | sudo tee -a /etc/hosts
 echo ""
 
 # =====================================
