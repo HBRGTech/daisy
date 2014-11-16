@@ -1,0 +1,30 @@
+[submodule "puppet/modules/php"]
+	path = puppet/modules/php
+	url = https://github.com/jippi/puppet-php
+[submodule "puppet/modules/apt"]
+	path = puppet/modules/apt
+	url = https://github.com/puppetlabs/puppetlabs-apt
+[submodule "puppet/modules/puppi"]
+	path = puppet/modules/puppi
+	url = https://github.com/example42/puppi
+[submodule "puppet/modules/stdlib"]
+	path = puppet/modules/stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib
+[submodule "puppet/modules/apache"]
+	path = puppet/modules/apache
+	url = https://github.com/puppetlabs/puppetlabs-apache
+[submodule "puppet/modules/concat"]
+	path = puppet/modules/concat
+	url = https://github.com/puppetlabs/puppetlabs-concat
+[submodule "puppet/modules/git"]
+	path = puppet/modules/git
+	url = https://github.com/puppetlabs/puppetlabs-git
+[submodule "puppet/modules/nodejs"]
+	path = puppet/modules/nodejs
+	url = https://github.com/puppetlabs/puppetlabs-nodejs
+[submodule "puppet/modules/ruby"]
+	path = puppet/modules/ruby
+	url = https://github.com/puppetlabs/puppetlabs-ruby
+[submodule "puppet/modules/wget"]
+	path = puppet/modules/wget
+	url = https://github.com/maestrodev/puppet-wget
