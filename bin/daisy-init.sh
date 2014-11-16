@@ -84,8 +84,15 @@ echo "=================================="
 vagrant up --no-provision
 vagrant provision
 echo ""
-[[ -n "$DAISY_DOMAIN" ]] && export FACTER_daisy_domain="$DAISY_DOMAIN"
-puppet apply --modulepath=/vagrant_data/puppet/modules --templatedir=/vagrant_data/puppet/files /vagrant_data/puppet/manifests/site.pp
+
+# =====================================
+# Add daisy.pattern.lab entry to hosts file
+# =====================================
+echo "=================================="
+echo "= Configuring the hosts file"
+echo "=================================="
+# Should match IP configured in Vagrantfile
+cat /etc/hosts | grep DAISY_DOMAIN || sudo printf "\n# Daisy Pattern Lab\n192.168.33.20 ${DAISY_DOMAIN}\n" | sudo tee -a /etc/hosts
 echo ""
 
 # =====================================
