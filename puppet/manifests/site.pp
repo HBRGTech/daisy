@@ -10,12 +10,12 @@ node 'daisy.pattern.lab' {
 	file { '/var/www/daisy.pattern.lab':
 	   ensure => 'link',
 	   target => '/vagrant_data/www',
-	   force => true,
+	   force => true
 	}
 
 	# Configure Apache
 	class { 'apache':
-		default_vhost => false,
+		default_vhost => false
     }
 	include apache::mod::rewrite
 
@@ -31,12 +31,12 @@ node 'daisy.pattern.lab' {
 		proxy_pass => $proxy_pass,
 		aliases => [
 		  { alias      => '/resources',
-		    path       => '/var/www/daisy.pattern.lab/source',
+		    path       => '/var/www/daisy.pattern.lab/source'
 		  },
 		  { alias      => '/pattern-lab',
-		    path       => '/var/www/daisy.pattern.lab/public',
+		    path       => '/var/www/daisy.pattern.lab/public'
 		  }
-		],
+		]
 	}
 
 	class { 'php': }
