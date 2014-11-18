@@ -3,7 +3,9 @@ daisy
 
 This is a vagrant and grunt powered [Pattern Lab](https://github.com/pattern-lab/patternlab-php), an [Atomic Web Design](http://pattern-lab.info/about.html) Design Pattern library/styleguide, derivative work from hbr.org's 2014 redesign. We use [SCSS version of Foundation](https://github.com/zurb/foundation) which is installed via [bower](http://bower.io/).
 
-Published results can be viewed at <a href="http://daisy.pattern.lab/pattern-lab">http://daisy.pattern.lab/pattern-lab</a> (or your local domain of choice) after vagrant is up.
+Read about it here: http://hbrgtech.github.io/pattern-lab-team-workflow/
+
+Published results can be viewed at <a href="http://daisy.pattern.lab/">http://daisy.pattern.lab/</a> (or your local domain of choice) after vagrant is up.
 
 Edit your scss  in the `www/source/scss` folder and your html/mustache mark-up in the `www/source/_patterns` folder. Pattern Lab will automatically be generated to <a href="http://local.pattern.hbr.org/pattern-lab">http://daisy.pattern.lab/pattern-lab</a> if grunt watch is running properly (if it isn't, use vagrant ssh, cd /vagrant_data, and run grunt or grunt watch manually).
 
@@ -31,6 +33,8 @@ Included within this project is a [Vagrant](http://www.vagrantup.com/) developme
 * Ruby 
 * Node.js/npm 
 * Grunt
+* Pattern Lab
+* Zurb Foundation
 See `package.json` and `bower.json` for version information.
 
 ## Requirements
@@ -48,17 +52,19 @@ Download [Vagrant](http://www.vagrantup.com/downloads.html) and [VirtualBox](htt
 If you are on a Unix based machine or an OSX based Mac, the setup is pretty easy.
 
 1.  Clone the [daisy Github repo](https://github.com/HBRGTech/daisy)
-2.  Open a terminal and run the init script: `./bin/daisy-init.sh`
-3.  If you get 'permission denied' run 'chmod 755 ./bin/daisy-init.sh'
-4.  Go to http://daisy.pattern.lab/pattern-lab in a web browser on the computer running vagrant.
+2.  Also clone all submodules by running `git submodule update —init`
+3.  Open a terminal and run the init script: `./bin/daisy-init.sh`
+4.  If you get 'permission denied' run 'chmod 755 ./bin/daisy-init.sh'
+5.  Go to http://daisy.pattern.lab in a web browser on the computer running vagrant.
 
 ### Windows
 
 Daisy is only supported on Windows 7 and above.  If you are using Windows XP, please ensure that you have the [Windows Power Shell](http://support.microsoft.com/kb/968929/en-us) installed.
 
 1.  Clone the [daisy Github repo](https://github.com/HBRGTech/daisy)
-2.  Run the installer batch script: `./bin/daisy-init.bat`
-3.  Go to http://daisy.pattern.lab/pattern-lab in a web browser on the computer running vagrant (may launch automatically).
+2.  Also clone all submodules by running `git submodule update —init`
+3.  Run the installer batch script: `./bin/daisy-init.bat`
+4.  Go to http://daisy.pattern.lab/ in a web browser on the computer running vagrant (may launch automatically).
 
 ## Vagrant Primer
 
