@@ -15,8 +15,8 @@ Pattern-Lab documentation:
 
 * [Foundation documentation](http://foundation.zurb.com/docs/), also see [Foundation README here](https://github.com/zurb/foundation)
 
-Versions included (Updated as of April 27, 2014):
-* Foundation v5.2.2 (see `bower.json`)
+Versions included (Updated as of November, 2014):
+* Foundation v5.4.7 (see `bower.json`)
 * Pattern-lab  v0.7.12
 
 # Daisy
