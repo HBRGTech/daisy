@@ -73,6 +73,14 @@ node 'daisy.pattern.lab' {
 	package { 'npm':
 		ensure => 'present'
 	}
+	
+	exec { 'install bower':
+		command => '/usr/bin/npm install -g bower',
+		user => 'root',
+		timeout => 0,		
+		require => Package['npm'],
+		before => Exec['npm install']
+	}
 
 	exec { 'install grunt-cli':
 		command => '/usr/bin/npm install -g grunt-cli',
