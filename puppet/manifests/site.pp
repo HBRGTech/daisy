@@ -65,23 +65,27 @@ node 'daisy.pattern.lab' {
 	package { 'npm':
 		ensure => 'present'
 	}
+
+	file { '/usr/bin/node':
+	   ensure => 'link',
+	   target => '/usr/bin/nodejs',
+	   require => Package['nodejs']
+	}
 	
 	exec { 'install bower':
 		command => '/usr/bin/npm install -g bower',
 		user => 'root',
 		timeout => 0,		
-		require => Package['npm'],
-		before => Exec['npm install']
+		require => Package['npm']
 	}
-
+	
 	exec { 'install grunt-cli':
 		command => '/usr/bin/npm install -g grunt-cli',
 		user => 'root',
 		timeout => 0,
-		require => Package['npm'],
-		before => Exec['npm install']
+		require => Package['npm']
 	}
-
+	->
 	# prepare grunt
 	exec { 'npm install':
 		command => '/usr/bin/npm install --no-bin-links',
@@ -90,27 +94,26 @@ node 'daisy.pattern.lab' {
 		timeout => 0,
 		require => Package['npm']
 	}
-
-	file { '/usr/bin/node':
-	   ensure => 'link',
-	   target => '/usr/bin/nodejs',
-	   require => Package['nodejs']
+	->
+	# prepare pattern lab
+	exec { 'prepare-pattern-lab':
+		command => '/usr/local/bin/grunt shell:patternlab',
+		cwd => '/vagrant_data',
+		user => 'vagrant',
+		timeout => 0
 	}
-
+	->
 	# prepare grunt watcher
-	exec { 'prepare grunt watcher':
+	exec { 'prepare-grunt-watcher':
 		command => '/bin/chmod a+x /vagrant_data/bin/watch.sh',
 		user => 'vagrant',
-		timeout => 0,
-		before => Exec['start-grunt']
+		timeout => 0
 	}
-
+	->
 	# start grunt
 	exec { 'start-grunt':
 		command => '/vagrant_data/bin/watch.sh',
 		user => 'vagrant',
-		timeout => 0,
-		require => File['/usr/bin/node']
+		timeout => 0		
 	}
-
 }

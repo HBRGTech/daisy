@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 cd /vagrant_data
 # Empty log file for clean start
