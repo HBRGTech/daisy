@@ -1,0 +1,7 @@
+{
+  "name": "daisy",
+  "version": "0.1.0",
+  "dependencies": {
+    "foundation": "~5.4.7"
+  }
+}
