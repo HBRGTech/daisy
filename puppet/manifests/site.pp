@@ -26,17 +26,9 @@ node 'daisy.pattern.lab' {
 	apache::vhost { 'daisy.pattern.lab':
 		servername => 'daisy.pattern.lab',
 		port => '80',
-		docroot => '/var/www/daisy.pattern.lab',
+		docroot => '/var/www/daisy.pattern.lab/public',
 		options => ['Indexes','FollowSymLinks','MultiViews'],
-		proxy_pass => $proxy_pass,
-		aliases => [
-		  { alias      => '/resources',
-		    path       => '/var/www/daisy.pattern.lab/source'
-		  },
-		  { alias      => '/pattern-lab',
-		    path       => '/var/www/daisy.pattern.lab/public'
-		  }
-		]
+		proxy_pass => $proxy_pass
 	}
 
 	class { 'php': }
