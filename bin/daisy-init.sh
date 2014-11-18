@@ -62,17 +62,17 @@ sudo -p "This script needs sudo access to continue. Please enter your password:"
 echo ""
 
 # =====================================
-# Ask for domain
+# Ask for domain someday
 # =====================================
-if [[ -z "$DAISY_DOMAIN" ]]; then
-    echo "=================================="
-    echo "= Domain Setup"
-    echo "=================================="
+#if [[ -z "$DAISY_DOMAIN" ]]; then
+#    echo "=================================="
+#    echo "= Domain Setup"
+#    echo "=================================="
 
-    read -e -p "What domain would you like to use? [daisy.pattern.lab]:" DAISY_DOMAIN
-    DAISY_DOMAIN="${DAISY_DOMAIN:-daisy.pattern.lab}"
-    echo ""
-fi
+#   read -e -p "What domain would you like to use? [daisy.pattern.lab]:" DAISY_DOMAIN
+DAISY_DOMAIN="${DAISY_DOMAIN:-daisy.pattern.lab}"
+#    echo ""
+#fi
 
 # =====================================
 # Start the VM (always provision, even if it's already running)
