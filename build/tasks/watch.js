@@ -2,10 +2,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks("grunt-contrib-watch");
 
 	grunt.config("watch", {
-		scripts: {
-			files: ["www/source/js/**/*.js", "www/source/js/*.js"],
-			tasks: ["jshint"]
-		},
 		css: {
 			files: ["www/source/scss/**/*.scss", "www/source/scss/*.scss"],
 			tasks: ["compass", "copy:css", "shell:patternlab"],
