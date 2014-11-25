@@ -4,6 +4,7 @@ daisy
 This is a vagrant and grunt powered [Pattern Lab](https://github.com/pattern-lab/patternlab-php), an [Atomic Web Design](http://pattern-lab.info/about.html) Design Pattern library/styleguide, derivative work from hbr.org's 2014 redesign. We use [SCSS version of Foundation](https://github.com/zurb/foundation) which is installed via [bower](http://bower.io/).
 
 Read about it here: http://hbrgtech.github.io/pattern-lab-team-workflow/
+and [Daigo's blog post](http://www.daigo.org/2014/11/introducing-daisy-a-sasspattern-lab-workflow-solution-using-vagrant/)
 
 Published results can be viewed at <a href="http://daisy.pattern.lab/">http://daisy.pattern.lab/</a> (or your local domain of choice) after vagrant is up.
 
