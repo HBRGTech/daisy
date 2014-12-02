@@ -53,7 +53,7 @@ Download [Vagrant](http://www.vagrantup.com/downloads.html) and [VirtualBox](htt
 If you are on a Unix based machine or an OSX based Mac, the setup is pretty easy.
 
 1.  Clone the [daisy Github repo](https://github.com/HBRGTech/daisy)
-2.  Also clone all submodules by running `git submodule update —init`
+2.  Also clone all submodules by running `git submodule update --init`
 3.  Open a terminal and run the init script: `./bin/daisy-init.sh`
 4.  If you get 'permission denied' run 'chmod 755 ./bin/daisy-init.sh'
 5.  Go to http://daisy.pattern.lab in a web browser on the computer running vagrant.
@@ -63,7 +63,7 @@ If you are on a Unix based machine or an OSX based Mac, the setup is pretty easy
 Daisy is only supported on Windows 7 and above.  If you are using Windows XP, please ensure that you have the [Windows Power Shell](http://support.microsoft.com/kb/968929/en-us) installed.
 
 1.  Clone the [daisy Github repo](https://github.com/HBRGTech/daisy)
-2.  Also clone all submodules by running `git submodule update —init`
+2.  Also clone all submodules by running `git submodule update --init`
 3.  Run the installer batch script: `./bin/daisy-init.bat`
 4.  Go to http://daisy.pattern.lab/ in a web browser on the computer running vagrant (may launch automatically).
 
