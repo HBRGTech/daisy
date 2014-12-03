@@ -1,6 +1,14 @@
 daisy
 =============
 
+```
+   {o}        _       _  
+    |      __| | __ _(_)___ _   _ 
+   \|/    / _` |/ _` | / __| | | |
+[~~~~~~~]| (_| | (_| | \__ \ |_| |
+ |_____|  \__,_|\__,_|_|___/\__, |
+          by hbrgtech       |___/ 
+```
 ## Introduction
 
 Do you work on a front-end web development team?  Does your team run into challenges producing the "gold master" CSS files for your projects?  We've all seen it: one developer's changes clobbering another's; mac and windows platforms producing different output; lack of consistency/style/rigor between contributions from different team members; reconciling the desire of tech-averse designers to try hundreds of different colors with an incompatible or inflexible QA/release process... the list goes on.
