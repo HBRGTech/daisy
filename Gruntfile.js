@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 
 	/* define the tasks to run when run with 'grunt' */
 	grunt.registerTask("default", [
-		"compass",
+		"sass",
 		"copy",
 		"shell:patternlab"
 	]);
