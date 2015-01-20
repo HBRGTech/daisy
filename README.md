@@ -17,7 +17,7 @@ Even if members of a team can come to a consensus about what tools, frameworks, 
 
 *daisy* was distilled from our team's attempt to bring sanity to the workplace, and combines a version-controlled workflow with the principles of atomic web design to develop and manage a CSS layout. At its core is the very solid and responsive [SCSS version of Zurb's Foundation](https://github.com/zurb/foundation), brought to life as a continuously-updated style guide through [Pattern Lab](https://github.com/pattern-lab/patternlab-php).
 
-As with any powerful tools, Pattern Lab and SCSS-like tools come with the overhead of maintenance - especially when it comes to their supporting components (PHP, ruby, git, bower, grunt, compass, and apache, just to name a few).  Complicate that with the different platforms, environments, editing tools, and preferred configurations that each developer on a team brings to the table, and it could be a nightmare to implement them in the first place.
+As with any powerful tools, Pattern Lab and SCSS-like tools come with the overhead of maintenance - especially when it comes to their supporting components (PHP, git, bower, grunt, libsass, and apache, just to name a few).  Complicate that with the different platforms, environments, editing tools, and preferred configurations that each developer on a team brings to the table, and it could be a nightmare to implement them in the first place.
 
 That's why one of daisy's main features is that it's packaged as a vagrant box.  Start a project with daisy, and your entire team can keep its preferred tools while working with a standardized set of essentials to produce consistent, version-controlled output in a highly-adaptable workflow.  Even your designers will want to participate - and can easily do so, just by running daisy on their local environments with whatever access you give them to the git repo.
 
@@ -33,7 +33,6 @@ Edit your scss in the `www/source/scss` folder, and your html/mustache mark-up i
 Useful links:
 
 * [Pattern-Lab documentation](http://pattern-lab.info/docs/index.html), also see [Pattern lab README here](https://github.com/pattern-lab/patternlab-php)
-
 * [Foundation documentation](http://foundation.zurb.com/docs/), also see [Foundation README here](https://github.com/zurb/foundation)
 
 Versions included (Updated as of November, 2014):
@@ -51,7 +50,6 @@ Included within this project is a [Vagrant](http://www.vagrantup.com/) developme
 * Ubuntu 14.04
 * Apache
 * PHP CLI
-* Ruby 
 * Node.js/npm 
 * Grunt
 * Pattern Lab
