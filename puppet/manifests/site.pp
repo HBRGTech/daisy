@@ -34,29 +34,6 @@ node 'daisy.pattern.lab' {
 	class { 'php': }
 	php::module { "json": }
 
-	# install ruby
-	class { 'ruby':
-		gems_version  => 'latest',
-		rubygems_update => false,
-		before => Exec['bundle-install']
-	}
-
-	# Install bundler to handle Ruby dependencies
-	package { 'bundler':
-		ensure => 'present'
-	}
-
-	# prepare ruby
-	exec { 'bundle-install':
-		command => 'bundle install',
-		cwd => '/vagrant_data',
-		user => 'root',
-		path => '/usr/bin',
-		timeout => 0,
-		before => Exec['start-grunt'],
-		require => Package['bundler']
-	}
-
 	# set up node and grunt
 	package { 'nodejs':
 		ensure => 'present'

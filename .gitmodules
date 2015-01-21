@@ -19,9 +19,6 @@
 [submodule "puppet/modules/nodejs"]
 	path = puppet/modules/nodejs
 	url = https://github.com/puppetlabs/puppetlabs-nodejs
-[submodule "puppet/modules/ruby"]
-	path = puppet/modules/ruby
-	url = https://github.com/puppetlabs/puppetlabs-ruby
 [submodule "puppet/modules/wget"]
 	path = puppet/modules/wget
 	url = https://github.com/maestrodev/puppet-wget

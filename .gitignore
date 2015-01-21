@@ -55,10 +55,12 @@ php.log
 npm-debug.log
 
 # ignore grunt compiled style.css
-www/source/css/style.css
+www/source/css/*.css
+www/source/css/*.map
 
 # pattern-lab files ignore public stuff
 www/public/css/*.css
+www/public/css/*.map
 www/public/patterns/**/*.html
 www/public/patterns/**/*.mustache
 www/public/js/*.js
@@ -70,4 +72,3 @@ www/public/styleguide/html/styleguide.html
 www/public/data/annotations.js
 www/public/latest-change.txt
 www/public/css/images/*
-www/source/css/hbr-fonts.css
