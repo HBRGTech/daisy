@@ -72,3 +72,4 @@ www/public/styleguide/html/styleguide.html
 www/public/data/annotations.js
 www/public/latest-change.txt
 www/public/css/images/*
+www/public/styleguide/data/*.js
