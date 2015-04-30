@@ -1,62 +1,101 @@
-## About Pattern Lab
-- [Pattern Lab Website](http://patternlab.io/)
-- [About Pattern Lab](http://patternlab.io/about.html)
-- [Documentation](http://patternlab.io/docs/index.html)
-- [Demo](http://demo.patternlab.io/)
+# Pattern Lab Development Edition
 
-The PHP version of Pattern Lab is, at its core, a static site generator. It combines platform-agnostic assets, like the [Mustache](http://mustache.github.io/)-based patterns and the JavaScript-based viewer, with a PHP-based "builder" that transforms and dynamically builds the Pattern Lab site. By making it a static site generator, Pattern Lab strongly separates patterns, data, and presentation from build logic. 
+The Development Edition of Pattern Lab gives the core team the ability to work on and commit changes to the latest editions of select packages while running each package within the overall Pattern Lab environment. This edition is NOT stable.
 
-## Demo
+## Installing the Development Edition
 
-You can play with a demo of the front-end of Pattern Lab at [demo.patternlab.io](http://demo.patternlab.io).
+Pattern Lab uses [Composer](https://getcomposer.org/) to manage project dependencies. If you are going to use the Development Edition you should have Composer installed. 
 
-## Getting Started
+### 1. Install Composer 
 
-* [Requirements](http://patternlab.io/docs/requirements.html)
-* [Installing the PHP Version of Pattern Lab](http://patternlab.io/docs/installation.html)
-* [Upgrading the PHP Version of Pattern Lab](http://patternlab.io/docs/upgrading.html)
-* [Generating the Pattern Lab Website for the First Time](http://patternlab.io/docs/first-run.html)
-* [Editing the Pattern Lab Website Source Files](http://patternlab.io/docs/editing-source-files.html)
-* [Using the Command-line Options](http://patternlab.io/docs/command-line.html)
-* [Command Prompt on Windows](http://patternlab.io/docs/command-prompt-windows.html)
+To install Composer type the following two lines in the command line:
 
-## Working with Patterns
+    curl -sS https://getcomposer.org/installer | php
+    mv composer.phar /usr/local/bin/composer
 
-Patterns are the core element of Pattern Lab. Understanding how they work is the key to getting the most out of the system. Patterns use [Mustache](http://mustache.github.io/) so please read [Mustache's docs](http://mustache.github.io/mustache.5.html) as well.
+Then close and re-open your command line terminal.
 
-* [How Patterns Are Organized](http://patternlab.io/docs/pattern-organization.html)
-* [Adding New Patterns](http://patternlab.io/docs/pattern-add-new.html)
-* [Reorganizing Patterns](http://patternlab.io/docs/pattern-reorganizing.html)
-* [Including One Pattern Within Another via Partials](http://patternlab.io/docs/pattern-including.html)
-* [Managing Assets for a Pattern: JavaScript, images, CSS, etc.](http://patternlab.io/docs/pattern-managing-assets.html)
-* [Modifying the Pattern Header and Footer](http://patternlab.io/docs/pattern-header-footer.html)
-* [Using Pseudo-Patterns](http://patternlab.io/docs/pattern-pseudo-patterns.html)
-* [Using Pattern Parameters](http://patternlab.io/docs/pattern-parameters.html)
-* [Using Pattern State](http://patternlab.io/docs/pattern-states.html)
-* ["Hiding" Patterns in the Navigation](http://patternlab.io/docs/pattern-hiding.html)
-* [Adding Annotations](http://patternlab.io/docs/pattern-adding-annotations.html)
-* [Viewing Patterns on a Mobile Device](http://patternlab.io/docs/pattern-mobile-view.html)
+### 2. Install the Development Edition
 
-## Creating & Working With Dynamic Data for a Pattern
+Use Composer's `create-project` feature to install the Development Edition into a location of your choosing. Type:
 
-The PHP version of Pattern Lab utilizes Mustache as the template language for patterns. In addition to allowing for the [inclusion of one pattern within another](http://patternlab.io/docs/pattern-including.html) it also gives pattern developers the ability to include variables. This means that attributes like image sources can be centralized in one file for easy modification across one or more patterns. The PHP version of Pattern Lab uses a JSON file, `source/_data/data.json`, to centralize many of these attributes.
+    cd install/location/
+    composer create-project pattern-lab/edition-development your-project-name
 
-* [Introduction to JSON & Mustache Variables](http://patternlab.io/docs/data-json-mustache.html)
-* [Overriding the Central `data.json` Values with Pattern-specific Values](http://patternlab.io/docs/data-pattern-specific.html)
-* [Linking to Patterns with Pattern Lab's Default `link` Variable](http://patternlab.io/docs/data-link-variable.html)
-* [Creating Lists with Pattern Lab's Default `listItems` Variable](http://patternlab.io/docs/data-listitems.html)
+**Important:** When asked `Do you want to remove the existing VCS (.git, .svn..) history?` answer `n`.
 
-## Using Pattern Lab's Advanced Features
+This will create a directory called `your-project-name`. It will also install Pattern Lab's default folder structure as well as core, its dependencies, and the select packages as separate Git clones.
 
-By default, the Pattern Lab assets can be manually generated and the Pattern Lab site manually refreshed but who wants to waste time doing that? Here are some ways that Pattern Lab can make your development workflow a little smoother:
+### 3. Update Git Remotes
 
-* [Watching for Changes and Auto-Regenerating Patterns](http://patternlab.io/docs/advanced-auto-regenerate.html)
-* [Auto-Reloading the Browser Window When Changes Are Made](http://patternlab.io/docs/advanced-reload-browser.html)
-* [Multi-browser & Multi-device Testing with Page Follow](http://patternlab.io/docs/advanced-page-follow.html)
-* [Keyboard Shortcuts](http://patternlab.io/docs/advanced-keyboard-shortcuts.html)
-* [Special Pattern Lab-specific Query String Variables ](http://patternlab.io/docs/pattern-linking.html)
-* [Preventing the Cleaning of public/](http://patternlab.io/docs/advanced-clean-public.html)
-* [Generating CSS](http://patternlab.io/docs/advanced-generating-css.html)
-* [Modifying the Pattern Lab Nav](http://patternlab.io/docs/advanced-pattern-lab-nav.html)
-* [Editing the config.ini Options](http://patternlab.io/docs/advanced-config-options.html)
-* [Integration with Compass](http://patternlab.io/docs/advanced-integration-with-compass.html)
+Due to an issue with Composer the default `remote` values for the `dev` branches are set to the wrong locations. This will cause issues if/when you try to push your changes. To update them you must type:
+
+    git config branch.dev.remote origin
+
+for each package. The list of packages included in the Development Edition and their locations are:
+
+    pattern-lab/core -> vendor/pattern-lab/core/
+    pattern-lab/unified-asset-installer -> vendor/pattern-lab/unified-asset-installer
+    pattern-lab/patternengine-mustache -> packages/pattern-lab/patternengine-mustache
+    pattern-lab/starterkit-mustache-default -> packages/pattern-lab/starterkit-mustache-default
+    pattern-lab/styleguidekit-assets-default -> packages/pattern-lab/styleguidekit-assets-default
+    pattern-lab/styleguidekit-mustache-default -> packages/pattern-lab/styleguidekit-mustache-default
+
+If you add another Pattern Lab package (e.g. plug-in, StarterKit, etc.) you must also make sure to update the origin for its `dev` branch.
+
+### 4. Run Generate
+
+To generate Pattern Lab for the first time and make sure everything was installed correctly type:
+
+    php core/console --generate
+
+To list all available commands type:
+
+    php core/console --help
+
+## Adding a New Package
+
+To add a new package to your version of the Development Edition type:
+
+    composer require package-name/from-packagist
+
+Composer uses [Packagist](http://packagist.com) as the repository of [all Pattern Lab-related packages](https://packagist.org/packages/pattern-lab/) from the core Pattern Lab team.
+
+## Forking and Testing a Package
+
+To use the Development Edition to test changes you may have made to a fork of a package do the following:
+
+### 1. Fork a Package and Create a Feature Test Branch
+
+On GitHub you can fork the package you want to modify. You must create a new branch in which you will create your new changes. In this example we will use `pattern-lab/patternengine-mustache` as the example of our forked project and `bugfix` as the name of our branch.
+
+### 2. Update the Repositories Section of `composer.json`
+
+In `composer.json` you need to add or update the `repositories` section to point at your forked repository for a package:
+
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/your-name/patternengine-php-mustache"
+        }
+    ],
+
+### 3. Update the Package Branch in Require Section of `composer.json`
+
+In `composer.json` you need to update the `require` section to point at the new branch in your forked repository:
+
+    "require": {
+        "pattern-lab/patternengine-mustache": "dev-bugfix"
+    }
+
+**Reminder:** `dev-` is used by Composer to know when it should clone a branch in a repo instead of downloading it. `dev-` should not he a part of the name of your branch.
+
+### 4. Update the Development Edition's Dependencies
+
+To update the Development Edition's dependencies to use your forked package type:
+
+    composer update pattern-lab/patternengine-mustache
+
+## Testing Against "Releases"
+
+Packages developed by the core Pattern Lab team use the [gitflow model](http://nvie.com/posts/a-successful-git-branching-model/) of Git repository management. Because the Development Edition clones the repos for each package you can technically switch each package to use the `master` branch to test against the last release of any particular package. 
