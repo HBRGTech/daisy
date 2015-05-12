@@ -1,0 +1,163 @@
+# COLORS
+
+[![Build Status](https://secure.travis-ci.org/kevinlebrun/colors.php.png)](http://travis-ci.org/kevinlebrun/colors.php?branch=master)
+[![Coverage Status](https://coveralls.io/repos/kevinlebrun/colors.php/badge.png)](https://coveralls.io/r/kevinlebrun/colors.php)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/kevinlebrun/colors.php/badges/quality-score.png?s=d16482bff3ea81a529ae87a5b5624f1a30db0b98)](https://scrutinizer-ci.com/g/kevinlebrun/colors.php/)
+[![Latest Stable Version](https://poser.pugx.org/kevinlebrun/colors.php/v/stable.png)](https://packagist.org/packages/kevinlebrun/colors.php)
+[![Total Downloads](https://poser.pugx.org/kevinlebrun/colors.php/downloads.png)](https://packagist.org/packages/kevinlebrun/colors.php)
+
+Combine all those styles to make your console script awesome:
+
+* reset
+* bold
+* dark
+* italic
+* underline
+* blink
+* reverse
+* concealed
+* default
+* white
+* black
+* red
+* green
+* yellow
+* blue
+* magenta
+* cyan
+* light_gray
+* dark_gray
+* light_red
+* light_green
+* light_yellow
+* light_blue
+* light_magenta
+* light_cyan
+* bg_default
+* bg_white
+* bg_black
+* bg_red
+* bg_green
+* bg_yellow
+* bg_blue
+* bg_magenta
+* bg_cyan
+* bg_light_gray
+* bg_dark_gray
+* bg_light_red
+* bg_light_green
+* bg_light_yellow
+* bg_light_blue
+* bg_light_magenta
+* bg_light_cyan
+
+## Installation
+
+Installation via composer is highly recommended.
+
+```json
+{
+    "require": {
+        "kevinlebrun/colors.php": "0.*"
+    }
+}
+```
+
+    $ curl -s https://getcomposer.org/installer | php
+    $ php composer.phar install
+
+## Usage
+
+```php
+<?php
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+use Colors\Color;
+
+$c = new Color();
+
+// highlight('green') === bg('green') === bg_green()
+// white() === fg('white')
+echo $c('Hello World!')->white()->bold()->highlight('green') . PHP_EOL;
+
+// using some magic
+echo $c('Hello World!')->white->bold->bg_green . PHP_EOL;
+
+// create your own theme
+$c->setTheme(
+    array(
+        'welcome' => array('white', 'bg_green'),
+        'bye' => 'blue',
+    )
+);
+
+echo $c('Hello World!')->welcome->bold . PHP_EOL;
+echo $c('Bye!')->bye . PHP_EOL;
+
+// use style tags
+$text = <<<EOF
+1 : <welcome>Hello <bold>World!</bold></welcome>
+2 : <bye>Bye!</bye>
+EOF;
+
+echo $c($text)->colorize() . PHP_EOL;
+
+// center text
+$text = 'hello' . PHP_EOL . '✩' . PHP_EOL . 'world';
+echo $c($text)->center() . PHP_EOL;
+
+// use standard API
+$message = $c->apply('bold', $c->white('Hello World!'));
+echo $message . PHP_EOL;
+echo $c->clean($message) . PHP_EOL;
+```
+
+## Contributing
+
+Install development dependencies:
+
+    $ curl -s https://getcomposer.org/installer | php
+    $ php composer.phar install --dev
+
+All tests must pass:
+
+    $ bin/phpunit
+
+Code style conventions must be followed:
+
+    $ bin/phpcs --standard=phpcs.xml -p .
+
+## Contributors
+
+* Nate Good <me@nategood.com>
+* Jérémy Derusse <https://github.com/jeremy-derusse>
+* Cam Spiers <camspiers@gmail.com>
+* Menthol <https://github.com/menthol>
+* Shane Garelja <https://github.com/shane-garelja>
+* Travis J. VanDame <https://github.com/tvandame>
+* Markus Staab <markus.staab@redaxo.de>
+
+## License
+
+(The MIT License)
+
+Copyright (c) 2014 Kevin Le Brun <lebrun.k@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

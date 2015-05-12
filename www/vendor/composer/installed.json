@@ -1,0 +1,779 @@
+[
+    {
+        "name": "pattern-lab/unified-asset-installer",
+        "version": "dev-dev",
+        "version_normalized": "dev-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/pattern-lab/unified-asset-installer.git",
+            "reference": "1b4f8c59f95adb083228b5687696629321c351af"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/pattern-lab/unified-asset-installer/zipball/1b4f8c59f95adb083228b5687696629321c351af",
+            "reference": "1b4f8c59f95adb083228b5687696629321c351af",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "1.0.0",
+            "php": ">=5.3.6"
+        },
+        "time": "2015-02-06 15:32:20",
+        "type": "composer-installer",
+        "extra": {
+            "class": "\\PatternLab\\Composer\\UnifiedAssetInstaller"
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "PatternLab\\Composer": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Dave Olsen",
+                "email": "dmolsen@gmail.com",
+                "homepage": "http://dmolsen.com",
+                "role": "Lead Developer"
+            }
+        ],
+        "description": "Manages the installation of Pattern Lab-related assets like StarterKits, Pattern Engines, and Plugins.",
+        "homepage": "http://patternlab.io",
+        "keywords": [
+            "assets",
+            "installer",
+            "pattern lab",
+            "plugins"
+        ]
+    },
+    {
+        "name": "symfony/finder",
+        "version": "v2.5.3",
+        "version_normalized": "2.5.3.0",
+        "target-dir": "Symfony/Component/Finder",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/Finder.git",
+            "reference": "090fe4eaff414d8f2171c7a4748ea868d530775f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/Finder/zipball/090fe4eaff414d8f2171c7a4748ea868d530775f",
+            "reference": "090fe4eaff414d8f2171c7a4748ea868d530775f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2014-07-28 13:20:46",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.5-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Finder\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            },
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            }
+        ],
+        "description": "Symfony Finder Component",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "kevinlebrun/colors.php",
+        "version": "0.4.1",
+        "version_normalized": "0.4.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kevinlebrun/colors.php.git",
+            "reference": "d132f36d06e48ea080855af19b4bcb1fb615224a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kevinlebrun/colors.php/zipball/d132f36d06e48ea080855af19b4bcb1fb615224a",
+            "reference": "d132f36d06e48ea080855af19b4bcb1fb615224a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "3.7.*",
+            "satooshi/php-coveralls": "dev-master",
+            "squizlabs/php_codesniffer": "1.*"
+        },
+        "time": "2014-12-23 01:23:37",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Colors": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kevin Le Brun",
+                "email": "lebrun.k@gmail.com",
+                "homepage": "http://kevinlebrun.fr",
+                "role": "developer"
+            }
+        ],
+        "description": "Colors for PHP CLI scripts",
+        "homepage": "https://github.com/kevinlebrun/colors.php",
+        "keywords": [
+            "cli",
+            "color",
+            "colors",
+            "console",
+            "shell"
+        ]
+    },
+    {
+        "name": "symfony/filesystem",
+        "version": "v2.5.0",
+        "version_normalized": "2.5.0.0",
+        "target-dir": "Symfony/Component/Filesystem",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/Filesystem.git",
+            "reference": "98e831eac836a0a5911626ce82684155f21d0e4d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/Filesystem/zipball/98e831eac836a0a5911626ce82684155f21d0e4d",
+            "reference": "98e831eac836a0a5911626ce82684155f21d0e4d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2014-04-16 10:36:21",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.5-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Filesystem\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            },
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            }
+        ],
+        "description": "Symfony Filesystem Component",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "symfony/event-dispatcher",
+        "version": "v2.5.0",
+        "version_normalized": "2.5.0.0",
+        "target-dir": "Symfony/Component/EventDispatcher",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/EventDispatcher.git",
+            "reference": "cb62ec8dd05893fc8e4f0e6e21e326e1fc731fe8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/cb62ec8dd05893fc8e4f0e6e21e326e1fc731fe8",
+            "reference": "cb62ec8dd05893fc8e4f0e6e21e326e1fc731fe8",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "psr/log": "~1.0",
+            "symfony/config": "~2.0",
+            "symfony/dependency-injection": "~2.0",
+            "symfony/stopwatch": "~2.2"
+        },
+        "suggest": {
+            "symfony/dependency-injection": "",
+            "symfony/http-kernel": ""
+        },
+        "time": "2014-04-29 10:13:57",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.5-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\EventDispatcher\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": "http://fabien.potencier.org",
+                "role": "Lead Developer"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony EventDispatcher Component",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "seld/jsonlint",
+        "version": "1.1.2",
+        "version_normalized": "1.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Seldaek/jsonlint.git",
+            "reference": "7cd4c4965e17e6e4c07f26d566619a4c76f8c672"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/7cd4c4965e17e6e4c07f26d566619a4c76f8c672",
+            "reference": "7cd4c4965e17e6e4c07f26d566619a4c76f8c672",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2013-11-04 15:41:11",
+        "bin": [
+            "bin/jsonlint"
+        ],
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Seld\\JsonLint": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jordi Boggiano",
+                "email": "j.boggiano@seld.be",
+                "homepage": "http://seld.be",
+                "role": "Developer"
+            }
+        ],
+        "description": "JSON Linter",
+        "keywords": [
+            "json",
+            "linter",
+            "parser",
+            "validator"
+        ]
+    },
+    {
+        "name": "symfony/yaml",
+        "version": "v2.4.4",
+        "version_normalized": "2.4.4.0",
+        "target-dir": "Symfony/Component/Yaml",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/Yaml.git",
+            "reference": "65539ecde838f9c0d18b006b2101e3deb4b5c9ff"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/Yaml/zipball/65539ecde838f9c0d18b006b2101e3deb4b5c9ff",
+            "reference": "65539ecde838f9c0d18b006b2101e3deb4b5c9ff",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2014-04-18 20:37:09",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Yaml\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": "http://fabien.potencier.org",
+                "role": "Lead Developer"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Yaml Component",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "michelf/php-markdown",
+        "version": "1.4.0",
+        "version_normalized": "1.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/michelf/php-markdown.git",
+            "reference": "96d8150406f67e683ef4acc09fef91785fef1266"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/michelf/php-markdown/zipball/96d8150406f67e683ef4acc09fef91785fef1266",
+            "reference": "96d8150406f67e683ef4acc09fef91785fef1266",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2013-11-29 17:09:24",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-lib": "1.4.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Michelf": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Michel Fortin",
+                "email": "michel.fortin@michelf.ca",
+                "homepage": "http://michelf.ca/",
+                "role": "Developer"
+            },
+            {
+                "name": "John Gruber",
+                "homepage": "http://daringfireball.net/"
+            }
+        ],
+        "description": "PHP Markdown",
+        "homepage": "http://michelf.ca/projects/php-markdown/",
+        "keywords": [
+            "markdown"
+        ]
+    },
+    {
+        "name": "pattern-lab/core",
+        "version": "dev-dev",
+        "version_normalized": "dev-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/pattern-lab/patternlab-php-core.git",
+            "reference": "712cbdeb7a7b78026be123173b9e121ba3e02c84"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/pattern-lab/patternlab-php-core/zipball/712cbdeb7a7b78026be123173b9e121ba3e02c84",
+            "reference": "712cbdeb7a7b78026be123173b9e121ba3e02c84",
+            "shasum": ""
+        },
+        "require": {
+            "kevinlebrun/colors.php": "0.*",
+            "michelf/php-markdown": "1.4",
+            "pattern-lab/unified-asset-installer": "dev-dev",
+            "php": ">=5.3.6",
+            "seld/jsonlint": "1.1.2",
+            "symfony/event-dispatcher": "v2.5.0",
+            "symfony/filesystem": "v2.5.0",
+            "symfony/finder": "v2.5.3",
+            "symfony/yaml": "2.4.4"
+        },
+        "time": "2015-02-06 00:23:33",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "PatternLab": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Dave Olsen",
+                "email": "dmolsen@gmail.com",
+                "homepage": "http://dmolsen.com",
+                "role": "Lead Developer"
+            },
+            {
+                "name": "Brad Frost",
+                "homepage": "http://bradfrostweb.com",
+                "role": "Creator"
+            }
+        ],
+        "description": "The core functionality for Pattern Lab.",
+        "homepage": "http://patternlab.io",
+        "keywords": [
+            "atomic",
+            "atomic design",
+            "pattern lab",
+            "style guide",
+            "styleguide"
+        ]
+    },
+    {
+        "name": "mustache/mustache",
+        "version": "v2.6.1",
+        "version_normalized": "2.6.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bobthecow/mustache.php.git",
+            "reference": "1430ca884912eaba2b3830856b45685733b16789"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/1430ca884912eaba2b3830856b45685733b16789",
+            "reference": "1430ca884912eaba2b3830856b45685733b16789",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.4"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "*"
+        },
+        "time": "2014-06-20 19:34:49",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Mustache": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Justin Hileman",
+                "email": "justin@justinhileman.info",
+                "homepage": "http://justinhileman.com"
+            }
+        ],
+        "description": "A Mustache implementation in PHP.",
+        "homepage": "https://github.com/bobthecow/mustache.php",
+        "keywords": [
+            "mustache",
+            "templating"
+        ]
+    },
+    {
+        "name": "pattern-lab/patternengine-mustache",
+        "version": "dev-dev",
+        "version_normalized": "dev-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/pattern-lab/patternengine-php-mustache.git",
+            "reference": "2404f959936002e2e092c54e9d8428faf147d5d6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/pattern-lab/patternengine-php-mustache/zipball/2404f959936002e2e092c54e9d8428faf147d5d6",
+            "reference": "2404f959936002e2e092c54e9d8428faf147d5d6",
+            "shasum": ""
+        },
+        "require": {
+            "mustache/mustache": "v2.6.1",
+            "php": ">=5.3.6"
+        },
+        "time": "2015-02-09 00:08:08",
+        "type": "patternlab-patternengine",
+        "extra": {
+            "patternlab": {
+                "config": [
+                    {
+                        "patternExtension": "mustache"
+                    }
+                ]
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "PatternLab\\PatternEngine\\Mustache": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Dave Olsen",
+                "email": "dmolsen@gmail.com",
+                "homepage": "http://dmolsen.com",
+                "role": "Lead Developer"
+            }
+        ],
+        "description": "Mustache-based Pattern Engine for the PHP version of Pattern Lab ",
+        "homepage": "http://patternlab.io",
+        "keywords": [
+            "mustache",
+            "pattern engine",
+            "pattern lab"
+        ]
+    },
+    {
+        "name": "pattern-lab/starterkit-mustache-demo",
+        "version": "dev-dev",
+        "version_normalized": "dev-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/pattern-lab/starterkit-mustache-demo.git",
+            "reference": "690c6da55b8e3423faa406b82d57d1cd61d01710"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/pattern-lab/starterkit-mustache-demo/zipball/690c6da55b8e3423faa406b82d57d1cd61d01710",
+            "reference": "690c6da55b8e3423faa406b82d57d1cd61d01710",
+            "shasum": ""
+        },
+        "time": "2014-08-02 01:44:28",
+        "type": "patternlab-starterkit",
+        "extra": {
+            "patternlab": {
+                "dist": {
+                    "sourceDir": [
+                        {
+                            "*": "*"
+                        }
+                    ]
+                }
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Dave Olsen",
+                "email": "dmolsen@gmail.com",
+                "homepage": "http://dmolsen.com",
+                "role": "Lead Developer"
+            },
+            {
+                "name": "Brad Frost",
+                "homepage": "http://bradfrostweb.com",
+                "role": "Creator"
+            }
+        ],
+        "description": "The Mustache-based demo starter kit for Pattern Lab.",
+        "homepage": "http://patternlab.io",
+        "keywords": [
+            "demo",
+            "mustache",
+            "pattern lab",
+            "starterkit"
+        ]
+    },
+    {
+        "name": "pattern-lab/styleguidekit-assets-default",
+        "version": "dev-dev",
+        "version_normalized": "dev-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/pattern-lab/styleguidekit-assets-default.git",
+            "reference": "342b739e8647d18282816228bd22d73e0c6ecedc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/pattern-lab/styleguidekit-assets-default/zipball/342b739e8647d18282816228bd22d73e0c6ecedc",
+            "reference": "342b739e8647d18282816228bd22d73e0c6ecedc",
+            "shasum": ""
+        },
+        "time": "2015-02-08 13:02:24",
+        "type": "patternlab-styleguidekit",
+        "extra": {
+            "patternlab": {
+                "dist": {
+                    "publicDir": [
+                        {
+                            "bower_components/*": "styleguide/bower_components/*"
+                        },
+                        {
+                            "css/patternlab/*": "styleguide/css/*"
+                        },
+                        {
+                            "fonts/*": "styleguide/fonts/*"
+                        },
+                        {
+                            "html/index.html": "index.html"
+                        },
+                        {
+                            "images/*": "styleguide/images/*"
+                        },
+                        {
+                            "js/*": "styleguide/js/*"
+                        }
+                    ],
+                    "sourceDir": [
+                        {
+                            "css/custom/*": "styleguide/css/*"
+                        }
+                    ]
+                },
+                "config": [
+                    {
+                        "ishMinimum": "240"
+                    },
+                    {
+                        "ishMaximum": "2600"
+                    },
+                    {
+                        "ishControlsHide": [
+                            "hay"
+                        ]
+                    }
+                ]
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Dave Olsen",
+                "email": "dmolsen@gmail.com",
+                "homepage": "http://dmolsen.com",
+                "role": "Lead Developer"
+            },
+            {
+                "name": "Brad Frost",
+                "homepage": "http://bradfrostweb.com",
+                "role": "Creator"
+            }
+        ],
+        "description": "The assets for the default styleguide mark-up and styles for Pattern Lab.",
+        "homepage": "http://patternlab.io",
+        "keywords": [
+            "mustache",
+            "pattern lab",
+            "styleguide"
+        ]
+    },
+    {
+        "name": "pattern-lab/styleguidekit-mustache-default",
+        "version": "dev-dev",
+        "version_normalized": "dev-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/pattern-lab/styleguidekit-mustache-default.git",
+            "reference": "57b7563ffe2f983f3f868db97161b98c7d02b948"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/pattern-lab/styleguidekit-mustache-default/zipball/57b7563ffe2f983f3f868db97161b98c7d02b948",
+            "reference": "57b7563ffe2f983f3f868db97161b98c7d02b948",
+            "shasum": ""
+        },
+        "require": {
+            "pattern-lab/styleguidekit-assets-default": "dev-dev"
+        },
+        "time": "2015-02-08 13:25:33",
+        "type": "patternlab-styleguidekit",
+        "extra": {
+            "patternlab": {
+                "config": [
+                    {
+                        "styleguideKit": "pattern-lab/styleguidekit-mustache-default"
+                    }
+                ]
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Dave Olsen",
+                "email": "dmolsen@gmail.com",
+                "homepage": "http://dmolsen.com",
+                "role": "Lead Developer"
+            },
+            {
+                "name": "Brad Frost",
+                "homepage": "http://bradfrostweb.com",
+                "role": "Creator"
+            }
+        ],
+        "description": "The default Mustache-based styleguide mark-up and styles for Pattern Lab",
+        "homepage": "http://patternlab.io",
+        "keywords": [
+            "mustache",
+            "pattern lab",
+            "styleguide"
+        ]
+    }
+]

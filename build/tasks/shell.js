@@ -3,10 +3,10 @@ module.exports = function(grunt) {
 
 	grunt.config("shell", {
 		patternlab: {
-			command: "touch /vagrant_data/www/public/styleguide/html/styleguide.html && php /vagrant_data/www/core/builder.php -g"
+			command: "php /vagrant_data/www/core/console --generate"
 		},
 		patternonly: {
-			command: "php /vagrant_data/www/core/builder.php -gp"
+			command: "php /vagrant_data/www/core/console -gp"
 		}
 	});
 };

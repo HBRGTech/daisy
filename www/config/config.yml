@@ -1,0 +1,27 @@
+v: 0.7.12
+overrideConfig: q
+ie:
+    - DS_Store
+    - less
+    - scss
+id:
+    - scss
+    - .svn
+    - .sass-cache
+cleanPublic: 'true'
+patternStates:
+    - inprogress
+    - inreview
+    - complete
+styleGuideExcludes: ''
+cacheBusterOn: 'true'
+exportDir: export
+packagesDir: packages
+publicDir: public
+sourceDir: source
+patternExtension: mustache
+ishMinimum: '240'
+ishMaximum: '2600'
+ishControlsHide:
+    - hay
+styleguideKit: pattern-lab/styleguidekit-mustache-default
