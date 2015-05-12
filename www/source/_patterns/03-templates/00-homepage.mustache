@@ -1,40 +1,29 @@
 <div class="page" id="page">
 	{{> organisms-header }}
 	<div role="main">
-		{{# emergency }}
-			{{> molecules-alert:error }}
-		{{/ emergency }}
-		{{# hero }}
-			{{> molecules-block-hero }}
-		{{/ hero}}
+		{{> molecules-block-hero }}
 
-		<div class="g g-3up">
-			{{# touts}}
-				<div class="gi">
-					{{> molecules-block-inset }}
-				</div>
-			{{/ touts}}
-		</div><!--end 3up-->
 
-		<hr />
+		<hr>
 
-		<div class="l-two-col">
-			<div class="l-main">
-				<section class="section latest-posts">
-					<h2 class="section-title">Latest Posts</h2>
-					<ul class="post-list">
-						{{# latest-posts }}
-							<li>{{> molecules-media-block }}</li>
-						{{/ latest-posts }}
-					</ul>
-					<a href="#" class="text-btn">View more posts</a>
-				</section>
-			</div><!--end .l-main-->
+		<div class="row">
+			<div class="medium-4 column">
+				{{> molecules-block-thumb-headline}}
+			</div>
+			<div class="medium-8 column">
+				{{> molecules-tabs}}
+			</div>
+		</div>
 
-			<div class="l-sidebar">
-				{{> organisms-recent-tweets }}
-			</div><!--end .l-sidebar-->
-		</div><!--end .l-two-col-->
+
+		<hr>
+
+		<div class="row">
+			<div class="small-12 column">
+				{{> molecules-block-grid}}
+			</div>
+		</div>
+
 	</div><!--End role=main-->
 	{{> organisms-footer }}
 </div>
